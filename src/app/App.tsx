@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import logoIcon from '../imports/Ico_-_concept.png';
+import iPhone17 from '../imports/iPhone_17.png';
 
 export default function App() {
   useEffect(() => {
@@ -177,7 +178,7 @@ export default function App() {
             {/* Mockup placeholder */}
             <div className="bg-[#F2EDE8] rounded-[12px] p-8 md:p-12 mb-8 flex items-center justify-center">
               <img
-                src="/src/imports/iPhone_17.png"
+                src={iPhone17}
                 alt="Vela app screenshot"
                 className="max-w-full h-auto max-h-[600px] object-contain"
               />
