@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
+import { Linkedin } from 'lucide-react';
 import logoIcon from '../imports/Ico_-_concept.png';
-import iPhone17 from '../imports/iPhone_17.png';
 
 export default function App() {
   useEffect(() => {
@@ -146,7 +146,7 @@ export default function App() {
 
           {/* Vela Product Card */}
           <div className="bg-[#FAF8F5] border-l-4 border-[#C9847A] rounded-[16px] p-8 md:p-12 shadow-[0_4px_20px_rgba(46,41,37,0.08)]">
-            <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
+            <div className="flex items-start justify-between mb-4 flex-wrap gap-4">
               <h3
                 className="text-[26px] md:text-[32px] tracking-[0.01em]"
                 style={{ fontFamily: 'var(--font-heading)', fontWeight: 600, lineHeight: 1.3 }}
@@ -157,28 +157,77 @@ export default function App() {
                 className="text-[13px] text-[#2E2925] px-4 py-2 bg-[#8FA68E] bg-opacity-10 rounded-full"
                 style={{ fontFamily: 'var(--font-body)', fontWeight: 500 }}
               >
-                In Development
+                ✅ Subscription
               </span>
             </div>
+
             <p
-              className="text-[18px] mb-6 opacity-85"
+              className="text-[18px] mb-8 opacity-85"
               style={{ fontFamily: 'var(--font-body)', fontWeight: 500, lineHeight: 1.6 }}
             >
-              Language learning, focused on real-world communication
+              Subscription-based language learning product
             </p>
-            <div className="space-y-4 mb-10">
-              <p
-                className="text-[16px] opacity-90"
-                style={{ fontFamily: 'var(--font-body)', lineHeight: 1.7 }}
+
+            <div className="mb-8">
+              <h4
+                className="text-[18px] mb-4 tracking-[0.01em]"
+                style={{ fontFamily: 'var(--font-heading)', fontWeight: 600, lineHeight: 1.3 }}
               >
-                Vela is a mobile application designed to help users quickly learn essential words and phrases in a new language. The product is built around practical usage, enabling users to navigate real-life conversations with greater confidence.
-              </p>
+                Product
+              </h4>
+              <div className="space-y-4">
+                <p
+                  className="text-[16px] opacity-90"
+                  style={{ fontFamily: 'var(--font-body)', lineHeight: 1.7 }}
+                >
+                  Vela is a mobile-first English learning product designed to help adult users learn essential words and phrases for real-world communication.
+                </p>
+                <p
+                  className="text-[16px] opacity-90"
+                  style={{ fontFamily: 'var(--font-body)', lineHeight: 1.7 }}
+                >
+                  The product focuses on short daily learning sessions, practical vocabulary, and structured exercises that help users build confidence in everyday situations.
+                </p>
+                <p
+                  className="text-[15px] opacity-75"
+                  style={{ fontFamily: 'var(--font-body)', lineHeight: 1.6 }}
+                >
+                  Payments are processed via trusted global platforms, including the App Store and web-based payment providers.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-3 mb-8">
+              <div>
+                <span
+                  className="text-[14px] text-[#9C8F88]"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  Platform: <span className="text-[#2E2925] font-medium">Mobile (iOS), Web</span>
+                </span>
+              </div>
+              <div>
+                <span
+                  className="text-[14px] text-[#9C8F88]"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  Business Model: <span className="text-[#2E2925] font-medium">Weekly and annual subscriptions</span>
+                </span>
+              </div>
+              <div>
+                <span
+                  className="text-[14px] text-[#9C8F88]"
+                  style={{ fontFamily: 'var(--font-body)' }}
+                >
+                  Target Markets: <span className="text-[#2E2925] font-medium">US, UK, Canada, EU</span>
+                </span>
+              </div>
             </div>
 
             {/* Mockup placeholder */}
             <div className="bg-[#F2EDE8] rounded-[12px] p-8 md:p-12 mb-8 flex items-center justify-center">
               <img
-                src={iPhone17}
+                src="/src/imports/iPhone_17.png"
                 alt="Vela app screenshot"
                 className="max-w-full h-auto max-h-[600px] object-contain"
               />
@@ -189,7 +238,7 @@ export default function App() {
                 className="text-[14px] text-[#9C8F88]"
                 style={{ fontFamily: 'var(--font-body)' }}
               >
-                Platform: <span className="text-[#2E2925] font-medium">Mobile (iOS), Web</span>
+                Status: <span className="text-[#2E2925] font-medium">Product rollout in progress</span>
               </span>
             </div>
           </div>
@@ -247,7 +296,7 @@ export default function App() {
                   className="text-[14px] text-[#9C8F88] mb-3"
                   style={{ fontFamily: 'var(--font-body)' }}
                 >
-                  Contact
+                  For business and support inquiries:
                 </p>
                 <a
                   href="mailto:hello@novelolabs.com"
@@ -266,7 +315,7 @@ export default function App() {
       <footer className="bg-[#2E2925] px-6 py-12 md:px-12">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <img
                 src={logoIcon}
                 alt="Novelo Labs"
@@ -278,8 +327,17 @@ export default function App() {
               >
                 NOVELO LABS
               </span>
+              <a
+                href="https://www.linkedin.com/company/novelo-labs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-7 h-7 bg-opacity-10 rounded-[6px] hover:bg-opacity-20 transition-all bg-[#faf8f552]"
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={16} className="text-[#FAF8F5]" />
+              </a>
             </div>
-            <div className="flex gap-6">
+            <div className="flex items-center gap-6">
               <a
                 href="https://novelolabs.gitbook.io/novelolabs-docs/legal/privacy-policy"
                 target="_blank"
@@ -309,10 +367,16 @@ export default function App() {
                 Novelo Labs Limited
               </p>
               <p
-                className="text-[13px] text-[#9C8F88]"
+                className="text-[13px] text-[#9C8F88] mb-1"
                 style={{ fontFamily: 'var(--font-body)', lineHeight: 1.6 }}
               >
                 Hong Kong SAR
+              </p>
+              <p
+                className="text-[12px] text-[#9C8F88] opacity-75"
+                style={{ fontFamily: 'var(--font-body)', lineHeight: 1.5 }}
+              >
+                Unit 18, 5/F., East Ocean Centre, 98 Granville Road, Tsim Sha Tsui, Hong Kong
               </p>
             </div>
             <p

@@ -1,7 +1,7 @@
 
-  # Generate landing page
+  # NoveloLabs
 
-  This is a code bundle for Generate landing page. The original project is available at https://www.figma.com/design/pQDRrDLp3IZSFlcfSQGehl/Generate-landing-page.
+  This is a code bundle for NoveloLabs. The original project is available at https://www.figma.com/design/pQDRrDLp3IZSFlcfSQGehl/NoveloLabs.
 
   ## Running the code
 
