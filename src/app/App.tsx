@@ -154,12 +154,6 @@ export default function App() {
               >
                 Vela
               </h3>
-              <span
-                className="text-[13px] text-[#2E2925] px-4 py-2 bg-[#8FA68E] bg-opacity-10 rounded-full"
-                style={{ fontFamily: 'var(--font-body)', fontWeight: 500 }}
-              >
-                ✅ Subscription
-              </span>
             </div>
 
             <p
@@ -332,10 +326,11 @@ export default function App() {
                 href="https://www.linkedin.com/company/novelo-labs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-7 h-7 bg-opacity-10 rounded-[6px] hover:bg-opacity-20 transition-all bg-[#faf8f552]"
+                className="flex items-center gap-2 px-3 py-2 rounded-[6px] bg-[#faf8f552] hover:bg-opacity-20 transition-all"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={16} className="text-[#FAF8F5]" />
+                <span className="text-[14px] text-[#FAF8F5] font-medium">LinkedIn</span>
               </a>
             </div>
             <div className="flex items-center gap-6">
